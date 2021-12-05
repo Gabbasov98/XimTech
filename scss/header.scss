@@ -215,7 +215,7 @@
     display: none;
     position: absolute;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     &:before {
         content: '';
         position: absolute;
@@ -349,6 +349,7 @@
             padding-top: 20px;
             top: 100%;
             left: -25px;
+            z-index: 20;
             a {
                 display: flex;
                 height: 40px;
