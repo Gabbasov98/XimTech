@@ -181,7 +181,8 @@
   .discount__title,
   .hit__title {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 0; }
     .discount__title i,
     .hit__title i {
       color: #F24941;
@@ -225,6 +226,8 @@
 .recomendation {
   padding: 37px 0;
   text-align: center; }
+  .recomendation__title {
+    margin-bottom: 0; }
   .recomendation__items {
     margin-top: 45px;
     display: grid;
@@ -244,6 +247,8 @@
 .news-index {
   padding: 37px 0;
   margin-top: 40px; }
+  .news-index__title {
+    margin-bottom: 0; }
   .news-index__top {
     display: flex;
     align-items: center; }
@@ -290,6 +295,14 @@
       margin-top: 8px;
       color: #C4C4C4; }
 
+.info {
+  padding: 37px 0; }
+  .info__inner {
+    display: flex;
+    justify-content: space-between; }
+  .info__left, .info__right {
+    width: calc(50% - 15px); }
+
 @media screen and (max-width: 1390px) {
   .main__slider-nav {
     width: 100%; } }
@@ -306,7 +319,12 @@
     height: 250px; }
 
   .news-index__item-content {
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .info__inner {
+    display: block; }
+  .info__left, .info__right {
+    width: 100%; } }
 @media screen and (max-width: 992px) {
   .main .swiper-slide {
     width: 770px !important; }
