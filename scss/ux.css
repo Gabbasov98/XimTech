@@ -24,6 +24,13 @@ input {
     color: #FFFFFF;
     background: rgba(29, 175, 209, 0.9); }
 
+.btn-grey {
+  background: #F5F5F5;
+  color: #1DAFD1; }
+  .btn-grey:hover {
+    color: #1DAFD1;
+    background: rgba(245, 245, 245, 0.9); }
+
 .card__img {
   height: 191px;
   display: flex;
@@ -49,6 +56,9 @@ input {
   align-items: center;
   justify-content: center;
   color: #FFFFFF; }
+  .card__available--not {
+    color: rgba(36, 35, 33, 0.5);
+    background: #FFFFFF; }
 .card__discount {
   position: absolute;
   top: 15px;
@@ -68,16 +78,20 @@ input {
   margin: 13px 0;
   display: flex;
   align-items: center; }
-.card__price-new {
-  font-weight: 700;
+.card__price {
+  font-weight: bold;
   font-size: 24px;
-  line-height: 90%;
-  color: #F24941; }
-.card__price-old {
-  margin-left: 8px;
-  font-size: 18px;
-  line-height: 90%;
-  color: #242321; }
+  line-height: 90%; }
+  .card__price-new {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90%;
+    color: #F24941; }
+  .card__price-old {
+    margin-left: 8px;
+    font-size: 18px;
+    line-height: 90%;
+    color: #242321; }
 .card__desc {
   font-size: 14px;
   line-height: 136%;

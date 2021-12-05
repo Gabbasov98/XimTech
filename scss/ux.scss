@@ -38,6 +38,15 @@ input {
     }
 }
 
+.btn-grey {
+    background: #F5F5F5;
+    color: #1DAFD1;
+    &:hover {
+        color: #1DAFD1;
+        background: rgba(#F5F5F5, 0.9);
+    }
+}
+
 .card {
     &__img {
         height: 191px;
@@ -67,6 +76,10 @@ input {
         align-items: center;
         justify-content: center;
         color: #FFFFFF;
+        &--not {
+            color: rgba(36, 35, 33, 0.5);
+            background: #FFFFFF;
+        }
     }
     &__discount {
         position: absolute;
@@ -90,6 +103,9 @@ input {
         align-items: center;
     }
     &__price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 90%;
         &-new {
             font-weight: 700;
             font-size: 24px;

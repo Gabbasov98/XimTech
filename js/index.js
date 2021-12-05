@@ -55,10 +55,43 @@ function sliderDiscount() {
     })
 }
 
+function sliderHit() {
+    var swiper = new Swiper('.hit .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.hit .swiper-button-next',
+            prevEl: '.hit .swiper-button-prev',
+        },
+        breakpoints: {
+            280: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            400: {
+                slidesPerView: 1.5,
+                spaceBetween: 15
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            790: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+        }
+    })
+}
+
 
 $(document).ready(function() {
     sliderMain()
     sliderDiscount()
+    sliderHit()
 
     $('.customScroll').mCustomScrollbar({
         axis: "x",
