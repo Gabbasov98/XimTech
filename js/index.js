@@ -87,11 +87,33 @@ function sliderHit() {
     })
 }
 
+function sliderService() {
+    var swiper = new Swiper('.service .swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        // centeredSlides: true,
+        // loop: true,
+        spped: 2500,
+        pagination: {
+            el: '.service .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 30
+            },
+        }
+    })
+}
+
 
 $(document).ready(function() {
     sliderMain()
     sliderDiscount()
     sliderHit()
+    sliderService()
 
     $('.customScroll').mCustomScrollbar({
         axis: "x",

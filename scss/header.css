@@ -14,8 +14,6 @@
   align-items: center; }
   .header__mail:hover, .header__phone:hover {
     color: #F5F5F5; }
-    .header__mail:hover path, .header__phone:hover path {
-      fill: #F5F5F5; }
   .header__mail svg, .header__phone svg {
     margin-right: 7px; }
 .header__city {
