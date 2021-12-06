@@ -32,7 +32,7 @@
         font-size: 14px;
         line-height: 136%;
         margin-right: auto;
-        .custom-select {
+        .city-select {
             height: 21px;
             padding: 0;
             width: unset;
@@ -51,6 +51,13 @@
                 background-size: 11px auto;
                 background-position: right center;
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.0756836 1.40692L7.50006 8.8313L14.9244 1.40692L13.6872 0.168799L7.50006 6.3568L1.31293 0.168799L0.0756836 1.40692Z' fill='white'/%3E%3C/svg%3E");
+            }
+            .option {
+                margin-bottom: 0 !important;
+                margin-left: 0;
+                &:before {
+                    display: none;
+                }
             }
         }
     }

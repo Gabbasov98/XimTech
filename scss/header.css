@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 136%;
   margin-right: auto; }
-  .header__city .custom-select {
+  .header__city .city-select {
     height: 21px;
     padding: 0;
     width: unset;
@@ -32,7 +32,7 @@
     background-color: transparent !important;
     border: none;
     margin-left: 5px; }
-    .header__city .custom-select span {
+    .header__city .city-select span {
       color: #fff;
       font-weight: 700;
       display: flex;
@@ -42,6 +42,11 @@
       background-size: 11px auto;
       background-position: right center;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.0756836 1.40692L7.50006 8.8313L14.9244 1.40692L13.6872 0.168799L7.50006 6.3568L1.31293 0.168799L0.0756836 1.40692Z' fill='white'/%3E%3C/svg%3E"); }
+    .header__city .city-select .option {
+      margin-bottom: 0 !important;
+      margin-left: 0; }
+      .header__city .city-select .option:before {
+        display: none; }
 .header__logo {
   width: 170px;
   margin-right: 30px;
