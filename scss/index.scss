@@ -633,6 +633,8 @@
 
 @media screen and (max-width: 790px) {
     .main {
+        width: 100%;
+        overflow-x: hidden;
         .swiper-container {
             width: calc(100% - 40px);
             margin: 0 auto;
