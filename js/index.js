@@ -16,6 +16,10 @@ function sliderMain() {
         },
         breakpoints: {
             320: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            790: {
                 slidesPerView: 'auto',
                 spaceBetween: 30
             },

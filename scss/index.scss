@@ -633,8 +633,12 @@
 
 @media screen and (max-width: 790px) {
     .main {
+        .swiper-container {
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
         .swiper-slide {
-            width: calc(100% - 40px) !important;
+            width: 100% !important;
         }
         &__slider {
             &-item {
