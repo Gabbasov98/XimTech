@@ -17,11 +17,14 @@ function sliderMain() {
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                spaceBetween: 30
+                spaceBetween: 30,
+                loop: false,
             },
             790: {
                 slidesPerView: 'auto',
-                spaceBetween: 30
+                spaceBetween: 30,
+                loop: true,
+
             },
         }
     })
