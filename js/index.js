@@ -239,6 +239,10 @@ $(document).ready(function() {
     gallery()
     cartCalc()
 
+    $(".pagination__item--active").prev().addClass("pagination__item--prev")
+    $(".pagination__item--active").next().addClass("pagination__item--next")
+
+
     $('.customScroll').mCustomScrollbar({
         axis: "x",
     });

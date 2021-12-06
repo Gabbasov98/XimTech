@@ -326,39 +326,89 @@ input {
     }
 }
 
-.red-star {
-    color: #e07b7b;
+.pagination {
+    margin: 50px 0 0;
+    display: flex;
+    align-items: center;
+    &__btn {
+        background: #F5F5F5;
+        height: 40px;
+        padding: 0 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1DAFD1;
+        &--first {
+            margin-right: 5px;
+        }
+        &--last {
+            margin-left: 5px;
+        }
+    }
+    &__item,
+    &__dots {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 136%;
+        color: #000000;
+        margin: 0 5px;
+        border-radius: 6px;
+        transition: all .3s;
+        &:hover {
+            background: #1DAFD1;
+            color: #fff;
+        }
+        &--active {
+            pointer-events: none;
+            background: #1DAFD1;
+            color: #fff;
+        }
+    }
+    &__dots {
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pagination {
+        &__item {
+            display: none;
+            &--active,
+            &--prev,
+            &--next {
+                display: flex;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
     .breadcrumbs {
         padding: 20px 0;
     }
+}
+
+@media screen and (max-width: 790px) {
     .pagination {
-        margin-top: 23px;
+        justify-content: center;
         &__item {
-            width: 31px;
-            height: 31px;
-            font-size: 10px;
-            margin: 0 2px;
-        }
-        &__btn {
-            width: 31px;
-            height: 31px;
-            margin-left: 20px;
-            svg {
-                width: 4px;
+            &--prev,
+            &--next {
+                display: none;
             }
-        }
-        &__btn--prev {
-            margin-right: 20px;
-            margin-left: 0;
         }
     }
 }
 
-@media screen and (max-width: 768px) {}
-
 @media screen and (max-width: 576px) {}
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+    .pagination {
+        &__dots {
+            display: none;
+        }
+    }
+}
